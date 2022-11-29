@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="10" name="google">
+<parameter name="url" value="https://www.facebook.com/signup"></parameter>
+<parameter name="build" value="v-9-8"></parameter>
+
+    <classes>
+      <class name="testngdiscus.ParallelTestTagExecution"/>
+      <class name="testngdiscus.ParallelTestTagExecution2"/>
+
+    </classes>
+  </test> <!-- Test -->
+
+<test thread-count="10" name="facebook" parallel="tests">
+<parameter name="url" value="https://www.google.com"></parameter>
+<parameter name="build" value="v-5-6"></parameter>
+
+
+    <classes>
+      <class name="testngdiscus.ParallelTestTagExecution"/>
+      <class name="testngdiscus.ParallelTestTagExecution2"/>
+
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->

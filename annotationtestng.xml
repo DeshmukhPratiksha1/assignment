@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Banking Application Suite">
+  <test thread-count="5" name="sanity suite">
+    <classes>
+      <class name="testngdiscus.AnnotationTestng"/>
+
+    </classes>
+  </test> <!-- Test -->
+
+ <test thread-count="5" name="regression suite">
+    <classes>
+      <class name="testngdiscus.AnnotationInTestng2"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
